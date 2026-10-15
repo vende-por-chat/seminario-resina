@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Encantos de Navidad en Resina: seminario gratuito online los días 29 y 30 de octubre. Aprende a crear adornos navideños con resina epóxica.">
+<title>Encantos de Navidad en Resina | Seminario gratuito</title>
+<style>
+:root { color-scheme: light dark; --purple:#7c3aed; --purple-dark:#5b21b6; --pink:#ec4899; --rose:#f43f5e; --ink:light-dark(#211b2d,#f7f2ff); --muted:light-dark(#61576f,#c9bfd7); --surface:light-dark(#ffffff,#211b2d); --soft:light-dark(#f5efff,#2c213c); --line:light-dark(#e7dff2,#453552); --green:#16a34a; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:light-dark(#fcfaff,#17121f); color:var(--ink); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; line-height:1.6; }
+.root { min-height:100vh; background:light-dark(#fcfaff,#17121f); }
+.wrap { width:min(1100px,calc(100% - 36px)); margin:0 auto; }
+.topbar { padding:18px 0; border-bottom:1px solid var(--line); }
+.brand { display:flex; align-items:center; gap:11px; font-weight:800; letter-spacing:-.03em; }
+.brand-mark { display:grid; place-items:center; width:42px; height:42px; border-radius:14px; color:white; background:linear-gradient(135deg,var(--purple),var(--pink)); font-size:22px; box-shadow:0 8px 24px #7c3aed30; }
+.brand small { display:block; color:var(--muted); font-size:11px; letter-spacing:.08em; text-transform:uppercase; font-weight:700; }
+.hero { padding:64px 0 54px; overflow:hidden; }
+.hero-grid { display:grid; grid-template-columns:1.15fr .85fr; gap:48px; align-items:center; }
+.eyebrow { display:inline-flex; gap:8px; align-items:center; border:1px solid light-dark(#e9d5ff,#5b3b79); background:var(--soft); color:light-dark(#6d28d9,#d8b4fe); border-radius:999px; padding:7px 13px; font-weight:800; font-size:12px; letter-spacing:.06em; text-transform:uppercase; }
+h1 { font-size:clamp(38px,5.5vw,62px); line-height:1.04; letter-spacing:-.055em; margin:22px 0 18px; max-width:700px; font-weight:850; }
+.gradient { background:linear-gradient(100deg,var(--purple),var(--pink)); -webkit-background-clip:text; background-clip:text; color:transparent; -webkit-text-stroke:0.25px #d6b56d55; text-shadow:0 0 0.5px #d6b56d35; }
+.lead { font-size:clamp(17px,2vw,20px); color:var(--muted); max-width:610px; margin:0 0 26px; }
+.cta { display:inline-flex; align-items:center; justify-content:center; gap:9px; text-align:center; background:linear-gradient(135deg,#22c55e,#12813a); color:#fff; padding:12px 19px; border:1px solid #75f0a1; border-radius:12px; text-decoration:none; font-weight:800; font-size:15px; box-shadow:0 7px 18px #16a34a28,inset 0 1px 0 #ffffff65; transition:transform .18s,box-shadow .18s,filter .18s; }
+.cta:hover { transform:translateY(-2px); filter:saturate(1.08); box-shadow:0 10px 24px #16a34a35,inset 0 1px 0 #ffffff70; }
+.cta:focus-visible { outline:2px solid #22c55e; outline-offset:4px; }
+.note { font-size:13px; color:var(--muted); margin-top:12px; }
+.visual { min-height:370px; border-radius:30px; padding:26px; position:relative; display:flex; align-items:center; justify-content:center; background:radial-gradient(circle at 20% 15%,#fbcfe8 0,transparent 34%),radial-gradient(circle at 85% 80%,#c4b5fd 0,transparent 38%),linear-gradient(135deg,#f5eaff,#fff1f7); box-shadow:0 24px 70px #6d28d91b; }
+.art-card { width:min(100%,350px); background:#ffffffd9; color:#352247; border:1px solid #ffffff; border-radius:24px; padding:25px; box-shadow:0 18px 50px #6d28d925; transform:rotate(2deg); }
+.art-title { font-size:13px; font-weight:900; letter-spacing:.14em; text-transform:uppercase; color:#7c3aed; }
+.art-big { font-size:36px; line-height:1.02; font-weight:900; letter-spacing:-.05em; margin:14px 0; }
+.art-desc { color:#675674; font-size:14px; }
+.resin-shapes { height:116px; display:flex; align-items:center; justify-content:center; gap:14px; margin:12px 0 4px; }
+.resin { width:74px; height:92px; border-radius:24px 24px 30px 30px; border:3px solid #ffffffa8; box-shadow:inset 0 0 20px #ffffff8c,0 10px 22px #6d28d927; transform:rotate(-10deg); background:linear-gradient(145deg,#f9a8d4,#c4b5fd 50%,#7dd3fc); }
+.resin:nth-child(2) { width:84px; height:84px; border-radius:50%; transform:rotate(8deg); background:linear-gradient(135deg,#fef08a,#f9a8d4 48%,#a5b4fc); }
+.resin:nth-child(3) { width:65px; height:82px; border-radius:18px; transform:rotate(12deg); background:linear-gradient(135deg,#a7f3d0,#93c5fd 55%,#c4b5fd); }
+.section { padding:62px 0; }
+.section.soft { background:var(--soft); }
+.section-head { text-align:center; max-width:720px; margin:0 auto 32px; }
+.section-head h2 { font-size:clamp(28px,4vw,40px); line-height:1.12; letter-spacing:-.04em; margin:0 0 12px; }
+.section-head p { color:var(--muted); margin:0; font-size:17px; }
+.cards { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; }
+.gallery-card { overflow:hidden; border-radius:22px; background:var(--surface); border:1px solid var(--line); box-shadow:0 12px 32px #6d28d910; }
+.gallery-card img { display:block; width:100%; height:245px; object-fit:cover; }
+.gallery-caption { padding:15px 17px 18px; color:var(--muted); font-size:14px; }
+.gallery-caption strong { display:block; color:var(--ink); font-size:16px; margin-bottom:3px; }
+.card { background:var(--surface); border:1px solid var(--line); border-radius:20px; padding:24px; }
+.icon-box { width:48px; height:48px; display:grid; place-items:center; border-radius:15px; background:var(--soft); font-size:24px; margin-bottom:15px; }
+.card h3 { font-size:18px; margin:0 0 8px; }
+.card p { margin:0; color:var(--muted); font-size:16px; }
+.audience { display:grid; grid-template-columns:1fr 1fr; gap:24px; align-items:start; }
+.audience-box { background:var(--surface); border:1px solid var(--line); border-radius:22px; padding:28px; }
+.audience-box h3 { margin:0 0 16px; font-size:21px; }
+.checks { list-style:none; padding:0; margin:0; display:grid; gap:13px; }
+.checks li { display:flex; gap:11px; align-items:flex-start; }
+.check { flex:0 0 24px; width:24px; height:24px; display:grid; place-items:center; background:light-dark(#dcfce7,#17452a); color:light-dark(#15803d,#86efac); border-radius:50%; font-weight:900; font-size:13px; margin-top:1px; }
+.steps { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; counter-reset:steps; }
+.step { padding:22px; border-radius:18px; border:1px solid var(--line); background:var(--surface); }
+.step-num { display:grid; place-items:center; width:34px; height:34px; border-radius:50%; background:linear-gradient(135deg,var(--purple),var(--pink)); color:white; font-weight:900; margin-bottom:12px; }
+.step h3 { margin:0 0 7px; font-size:17px; }
+.step p { margin:0; color:var(--muted); font-size:15px; }
+.final-cta { padding:58px 24px; text-align:center; background:linear-gradient(135deg,light-dark(#f3e8ff,#2c1b43),light-dark(#fce7f3,#3b1c31)); border:1px solid var(--line); border-radius:28px; }
+.final-cta h2 { margin:0 auto 12px; max-width:650px; font-size:clamp(29px,4vw,42px); line-height:1.12; letter-spacing:-.04em; }
+.final-cta p { color:var(--muted); margin:0 auto 24px; max-width:620px; }
+.footer { border-top:1px solid var(--line); padding:24px 0 34px; color:var(--muted); font-size:13px; text-align:center; }
+@media (max-width:760px) { .hero { padding:42px 0 38px; } .hero-grid { grid-template-columns:1fr; gap:30px; } .visual { min-height:300px; } .art-card { max-width:320px; } .cards,.steps,.gallery { grid-template-columns:1fr; } .gallery-card img { height:230px; } .audience { grid-template-columns:1fr; } .section { padding:46px 0; } .cta { width:100%; } }
+</style>
+</head>
+<body>
+<div class="root">
+<header class="topbar"><div class="wrap"><div class="brand"><div class="brand-mark">✦</div><div>Diseña y Crea con Resina<small>Encantos de Navidad · Seminario gratuito</small></div></div></div></header>
+<main>
+<section class="hero"><div class="wrap hero-grid"><div>
+<div class="eyebrow">🎄 Seminario gratuito · 29 y 30 de octubre</div>
+<h1>Encantos de Navidad <span class="gradient">en Resina</span></h1>
+<p class="lead">Descubre la magia de transformar la resina epóxica en espectaculares adornos navideños con efectos sorprendentes. Aprende a crear piezas únicas para decorar, regalar o explorar una oportunidad de emprendimiento esta Navidad.</p>
+<a class="cta" href="https://chat.whatsapp.com/DEv1FgUGgJ913oNmxKbGJj" target="_blank" rel="noopener noreferrer">💬 QUIERO PARTICIPAR GRATIS <span aria-hidden="true">↗</span></a>
+<div class="note">📅 29 y 30 de octubre · 🎥 Transmisión en vivo por YouTube · 2 clases de 1 hora y 30 minutos cada una.</div>
+</div><div class="visual" aria-label="Ilustración decorativa de piezas coloridas inspiradas en resina"><div class="art-card"><div class="art-title">Especial de Navidad</div><div class="art-big">Encantos de Navidad en Resina</div><div class="resin-shapes"><div class="resin"></div><div class="resin"></div><div class="resin"></div></div><div class="art-desc">Crea adornos especiales para decorar, regalar y llenar de magia tu Navidad.</div></div></div></div></section>
+<section class="section soft"><div class="wrap"><div class="section-head"><h2>¿Qué descubrirás en estas clases?</h2><p>Dos encuentros en vivo para inspirarte con la magia de la resina en temporada navideña.</p></div><div class="cards">
+<article class="card"><div class="icon-box">🎄</div><h3>Adornos navideños sorprendentes</h3><p>Descubre cómo dar vida a diseños festivos con resina epóxica y efectos especiales.</p></article>
+<article class="card"><div class="icon-box">🎁</div><h3>Piezas únicas para regalar</h3><p>Crea ideas llenas de encanto y detalles especiales para decorar tu hogar o sorprender a alguien.</p></article>
+<article class="card"><div class="icon-box">✨</div><h3>Inspírate para emprender</h3><p>Explora posibilidades para convertir tu creatividad en productos que ofrecer durante la Navidad.</p></article>
+</div></div></section>
+<section class="section soft"><div class="wrap"><div class="section-head"><h2>Ideas para una Navidad llena de creatividad</h2><p>Imagina adornos, detalles y regalos hechos con tu propio estilo.</p></div><div class="gallery"><article class="gallery-card"><svg viewBox="0 0 360 245" role="img" aria-label="Piezas artesanales de resina con flores y colores" style="display:block;width:100%;height:245px;background:#fce7f3"><defs><linearGradient id="resinA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f9a8d4"/><stop offset=".5" stop-color="#c4b5fd"/><stop offset="1" stop-color="#93c5fd"/></linearGradient></defs><rect width="360" height="245" fill="#fce7f3"/><circle cx="180" cy="120" r="86" fill="#fff" opacity=".6"/><g transform="translate(88 57) rotate(-12 48 65)"><rect width="96" height="132" rx="25" fill="url(#resinA)" stroke="#fff" stroke-width="5"/><g fill="#fff2b2" stroke="#e9a7bf" stroke-width="2"><circle cx="28" cy="32" r="11"/><circle cx="43" cy="32" r="11"/><circle cx="35" cy="20" r="11"/><circle cx="35" cy="44" r="11"/><circle cx="35" cy="32" r="6" fill="#f59e0b"/></g><path d="M35 48 Q28 74 54 94" stroke="#3f8f73" stroke-width="4" fill="none"/></g><g transform="translate(192 82) rotate(13 36 43)"><rect width="76" height="92" rx="23" fill="#a7f3d0" stroke="#fff" stroke-width="5"/><path d="M14 62 Q35 20 61 42" stroke="#60a5fa" stroke-width="8" fill="none" opacity=".85"/><circle cx="37" cy="34" r="13" fill="#fbcfe8"/><circle cx="37" cy="34" r="5" fill="#f59e0b"/></g></svg><div class="gallery-caption"><strong>Adornos con detalles especiales</strong>Inspiración para dar un toque personal a tu decoración navideña.</div></article><article class="gallery-card"><svg viewBox="0 0 360 245" role="img" aria-label="Posavasos y tabla decorativa con efecto de olas en resina" style="display:block;width:100%;height:245px;background:#e0f2fe"><defs><linearGradient id="seaA" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5d0a5"/><stop offset=".5" stop-color="#67c8d7"/><stop offset="1" stop-color="#2874b8"/></linearGradient></defs><rect width="360" height="245" fill="#e0f2fe"/><circle cx="180" cy="120" r="104" fill="#fff" opacity=".4"/><g transform="translate(69 44) rotate(-8 110 80)"><rect width="222" height="148" rx="32" fill="#d6b18b" stroke="#b98a5d" stroke-width="5"/><rect x="9" y="9" width="204" height="130" rx="26" fill="url(#seaA)"/><path d="M8 86 C47 56 68 116 106 85 S168 53 215 80 L215 120 C170 102 150 148 108 117 S44 141 8 120Z" fill="#fff" opacity=".86"/><path d="M8 104 C49 75 75 136 112 104 S174 78 215 100" stroke="#fff" stroke-width="6" fill="none" opacity=".8"/></g><circle cx="275" cy="177" r="38" fill="url(#seaA)" stroke="#fff" stroke-width="5"/><path d="M242 178 Q273 151 307 176" stroke="#fff" stroke-width="5" fill="none"/></svg><div class="gallery-caption"><strong>Regalos hechos con creatividad</strong>Detalles artesanales que puedes preparar para compartir en Navidad.</div></article><article class="gallery-card"><svg viewBox="0 0 360 245" role="img" aria-label="Joyas y piezas de resina transparente con flores preservadas" style="display:block;width:100%;height:245px;background:#f3e8ff"><defs><linearGradient id="resinC" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#c4b5fd" stop-opacity=".9"/></linearGradient></defs><rect width="360" height="245" fill="#f3e8ff"/><circle cx="180" cy="122" r="98" fill="#fff" opacity=".55"/><g transform="translate(65 55)"><path d="M50 0 C95 0 100 45 50 94 C0 45 5 0 50 0Z" fill="url(#resinC)" stroke="#fff" stroke-width="5"/><g transform="translate(50 35)" fill="#f9a8d4"><ellipse rx="10" ry="19" cy="-12"/><ellipse rx="10" ry="19" cy="12"/><ellipse rx="19" ry="10" cx="-12"/><ellipse rx="19" ry="10" cx="12"/></g><circle cx="50" cy="35" r="7" fill="#fbbf24"/><path d="M50 54 Q41 70 58 79" stroke="#4d9b74" stroke-width="3" fill="none"/></g><g transform="translate(191 52)"><path d="M36 0 C66 0 80 24 80 48 C80 83 52 114 36 128 C20 114 -8 83 -8 48 C-8 24 6 0 36 0Z" fill="url(#resinC)" stroke="#fff" stroke-width="5"/><g transform="translate(36 54)" fill="#fda4af"><circle cx="0" cy="-12" r="10"/><circle cx="12" cy="0" r="10"/><circle cx="0" cy="12" r="10"/><circle cx="-12" cy="0" r="10"/></g><circle cx="36" cy="54" r="5" fill="#f59e0b"/><path d="M36 70 Q24 86 39 97" stroke="#4d9b74" stroke-width="3" fill="none"/></g></svg><div class="gallery-caption"><strong>Creatividad que puede emprender</strong>Explora ideas para ofrecer piezas decorativas en temporada navideña.</div></article></div><div class="note" style="text-align:center;margin-top:18px">Imágenes ilustrativas de inspiración; los diseños específicos dependerán de las demostraciones del seminario.</div></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><h2>¿Este seminario es para ti?</h2><p>Puedes unirte aunque todavía no hayas trabajado con resina.</p></div><div class="audience">
+<div class="audience-box"><h3>Este seminario es para ti si…</h3><ul class="checks"><li><span class="check">✓</span><span>Te encantan las manualidades y la decoración navideña.</span></li><li><span class="check">✓</span><span>Quieres aprender ideas creativas con resina epóxica.</span></li><li><span class="check">✓</span><span>Buscas detalles únicos para decorar o regalar.</span></li><li><span class="check">✓</span><span>Quieres explorar opciones para emprender en Navidad, sin promesas de ingresos garantizados.</span></li></ul></div>
+<div class="audience-box"><h3>Detalles del seminario</h3><p style="color:var(--muted);margin-top:0">📅 29 y 30 de octubre<br>🎥 Transmisión en vivo por YouTube<br>🕒 2 clases de 1 hora y 30 minutos cada una<br><br>Únete al grupo de WhatsApp para recibir los horarios exactos y los enlaces de acceso.</p><a class="cta" href="https://chat.whatsapp.com/DEv1FgUGgJ913oNmxKbGJj" target="_blank" rel="noopener noreferrer">Unirme al grupo gratis ↗</a></div>
+</div></div></section>
+<section class="section soft"><div class="wrap"><div class="section-head"><h2>¿Cómo participar?</h2><p>Reserva tu lugar para vivir esta experiencia creativa.</p></div><div class="steps"><article class="step"><div class="step-num">1</div><h3>Únete al grupo</h3><p>Pulsa el botón y entra al grupo de WhatsApp de forma gratuita.</p></article><article class="step"><div class="step-num">2</div><h3>Confirma los horarios</h3><p>Revisa los avisos con los horarios y los enlaces oficiales de YouTube.</p></article><article class="step"><div class="step-num">3</div><h3>Conéctate en vivo</h3><p>Acompáñanos el 29 y 30 de octubre en las dos clases de 90 minutos.</p></article></div></div></section>
+<section class="section"><div class="wrap"><div class="final-cta"><h2>Esta Navidad, crea algo extraordinario</h2><p>Únete gratis al grupo y descubre la magia de los Encantos de Navidad en Resina.</p><a class="cta" href="https://chat.whatsapp.com/DEv1FgUGgJ913oNmxKbGJj" target="_blank" rel="noopener noreferrer">🎄 QUIERO PARTICIPAR GRATIS ↗</a><div class="note">29 y 30 de octubre · En vivo por YouTube · Acceso e indicaciones por WhatsApp.</div></div></div></section>
+</main>
+<footer class="footer"><div class="wrap">Diseña y Crea con Resina · Encantos de Navidad en Resina · Seminario gratuito<br>29 y 30 de octubre · Dos clases en vivo por YouTube.</div></footer>
+</div>
+</body>
+</html>
